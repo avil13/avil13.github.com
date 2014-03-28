@@ -138,17 +138,21 @@ h1 {
     width:70%;
 }
 .container *{
--webkit-transition: all 500ms ease-out;
--moz-transition: all 500ms ease-out;
--ms-transition: all 500ms ease-out;
--o-transition: all 500ms ease-out;
-transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
 }
 
 
 .repo {
     line-height: 1.5rem;
     list-style-image: url('../img/github.png');
+}
+
+.repo li {
+    margin-bottom: 1em;
 }
 .repo li a {
     vertical-align: top;
