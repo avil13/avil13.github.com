@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="style.css">
     <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet' type='text/css'>
@@ -35,24 +36,81 @@
 
         <hr class="header">
 
-        <ul class="repo">
-            <li>
-                <a target="_blank" href="https://github.com/avil13/jQuery-form_data">jQuery plugin for getting Form data</a>
-                <a href="/demo/form_data/" class="demo">{ Demo }</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://github.com/avil13/jQuery-anchorSpy.js">jQuery plugin to active menu item when scrolling page</a>
-                <a href="/demo/anchorSpy/" class="demo">{ Demo }</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://github.com/avil13/jQuery-numeric_format">jQuery plugin to format numeric data</a>
-                <a href="/demo/numeric_format/" class="demo">{ Demo }</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://github.com/avil13/class.mysqli">php class to connect and using mysqli</a>
-            </li>
-        </ul>
+        <h2>Demo of jQuery plugin Form_data</h2>
 
+        <a href="https://github.com/avil13/jQuery-form_data" class="git-link">GitHub repository</a>
+
+
+        <form action="." id="form">
+
+            <label for="myName">
+                <span>myName:</span>
+                <input type="text" name="myName" value="Aleksey">
+                <a href="#" class="hider">hide</a>
+            </label>
+
+            <label for="myInterest">
+                <span>myInterest:</span>
+                <select name="myInterest">
+                    <option value="web" selected>web</option>
+                    <option value="drums">drums</option>
+                    <option value="art">art</option>
+                </select>
+                <a href="#" class="hider">hide</a>
+            </label>
+
+
+            <label for="myMessage">
+                <span>myMessage:</span>
+                <textarea name="myMessage" rows="7">Hello, World!!</textarea>
+                <a href="#" class="hider">hide</a>
+            </label>
+
+            <input type="submit" value="Check" class="button">
+
+        </form>
+
+        <pre class="console" id="cnsle"></pre>
+
+        <hr class="m-tb">
+
+        <h3>How to use?</h3>
+        <p>
+            It's simple.<br>
+
+            Connect this plugin to your page:
+        </p>
+        <pre class="doc">
+            &lt;script src=&quot;/path/to/form_data.js&quot;&gt;&lt;/script&gt;
+        </pre>
+        <p>
+            And get form data:
+        </p>
+        <pre class="doc">
+            var data = $(&quot;#form&quot;).form_data();
+        </pre>
+        <p>
+            This plugin has two options. <br>
+            <span class="cod">select_attr</span> - where the name attribute is taken.<br>
+            Default: <span class="var-el">'name'</span> <br>
+            <br>
+            <span class="cod">textvalue</span> - boolean attribute. It's used to get value from select.<br>
+            If <span class="var-el">'false'</span> then get option value. If <span class="var-el">'true'</span> then get option text.<br>
+            Default: <span class="var-el">'false'</span>;
+        </p>
+
+        <pre class="doc pre">
+var data = $(&quot;#form&quot;).form_data({
+                <span class="cod">select_attr</span>: <span class="var-el">&quot;name&quot;</span>,
+                <span class="cod">textvalue</span>: <span class="var-el">false</span>
+            }); </pre>
+
+
+        <hr class="m-tb">
+        <p>
+            P.S.:<br>
+            This is very simple plugin, but it's very helpful for me.
+        </p>
 
     </div>
 
@@ -65,15 +123,15 @@
                 </span>
 
 
+
+
                 <a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Favil13.github.io"><i class="fa fa-facebook"></i> facebook</a>
                 <a target="_blank" href="http://twitter.com/home?status=list+of+%23github+repositories+from+%40avil13+http%3A%2F%2Favil13.github.io%2F"><i class="fa fa-twitter"></i> twitter</a>
                 <a target="_blank" href="http://vkontakte.ru/share.php?url=http%3A%2F%2Favil13.github.io"><i class="fa fa-vk"></i> vk.com</a>
             </div>
         </div>
     </div>
-
-
-
+    <!-- @ -->
     <div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -81,7 +139,10 @@
         window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')
         </script>
         <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+        <script src="form_data.js"></script>
+        <script src="script.js"></script>
+
+
 
         <script>
         (function(i, s, o, g, r, a, m) {
@@ -101,7 +162,7 @@
         </script>
 
         <script type="text/javascript">
-        // Yandex
+        // metrica
         (function(d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
@@ -136,7 +197,6 @@
                 <img src="//mc.yandex.ru/watch/24460400" style="position:absolute; left:-9999px;" alt="" />
             </div>
         </noscript>
-
 
 
     </div>

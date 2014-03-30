@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="style.css">
     <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet' type='text/css'>
@@ -34,24 +35,88 @@
         </header>
 
         <hr class="header">
+        <h2>Demo jQuery plugin to format numeric data</h2>
 
-        <ul class="repo">
+        <a href="https://github.com/avil13/jQuery-numeric_format" class="git-link">GitHub repository</a>
+
+
+        <ul class="format-demo">
             <li>
-                <a target="_blank" href="https://github.com/avil13/jQuery-form_data">jQuery plugin for getting Form data</a>
-                <a href="/demo/form_data/" class="demo">{ Demo }</a>
+                <input type="text" class="fomat-input" value="Have You 1000000.01 $?">
             </li>
+
             <li>
-                <a target="_blank" href="https://github.com/avil13/jQuery-anchorSpy.js">jQuery plugin to active menu item when scrolling page</a>
-                <a href="/demo/anchorSpy/" class="demo">{ Demo }</a>
+                <select id="thSep">
+                    <option value=" ">Space</option>
+                    <option value="_">Underscore</option>
+                    <option value="'">Apostrophe</option>
+                </select>
+                <select id="dcSep">
+                    <option value=",">&nbsp; , &nbsp;</option>
+                    <option value=".">&nbsp; . &nbsp;</option>
+                </select>
             </li>
+
             <li>
-                <a target="_blank" href="https://github.com/avil13/jQuery-numeric_format">jQuery plugin to format numeric data</a>
-                <a href="/demo/numeric_format/" class="demo">{ Demo }</a>
-            </li>
-            <li>
-                <a target="_blank" href="https://github.com/avil13/class.mysqli">php class to connect and using mysqli</a>
+                <a href="#" id="formatting" class="button">Format</a>
+                <span class="format-output">Have You 1000000.01 $?</span>
             </li>
         </ul>
+
+
+        <hr class="m-tb">
+
+
+        <h3>How to use?</h3>
+        <p>
+            It's simple.<br>
+
+            Connect this plugin to your page:
+        </p>
+        <pre class="doc">
+            &lt;script src=&quot;/path/to/numeric_format.js&quot;&gt;&lt;/script&gt;
+        </pre>
+        <p>
+            And select element what you want to format.
+        </p>
+        <pre class="doc">
+            $('p.nead-formatting').numeric_format();
+        </pre>
+
+
+
+         <p>
+            This plugin has some options.
+
+                <table class="options">
+                    <tr class="hd">
+                        <th>option</th>
+                        <th align="right">default</th>
+                    </tr>
+                    <tr>
+                        <td class="cod">thSep</td>
+                        <td class="var-el" align="right"> space </td>
+                    </tr>
+                    <tr>
+                        <td class="cod">dcSep</td>
+                        <td class="var-el" align="right"> , </td>
+                    </tr>
+                </table>
+
+            </p>
+
+
+        <pre class="doc pre">
+$('p.nead-formatting').numeric_format({
+                         <span class="cod">thSep</span>:<span class="var-el">&quot; &quot;</span>,
+                         <span class="cod">dcSep</span>:<span class="var-el">&quot;,&quot;</span>
+                       });
+        </pre>
+
+
+
+
+
 
 
     </div>
@@ -64,7 +129,6 @@
                     <i class="fa fa-heart"></i> Recommendation
                 </span>
 
-
                 <a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Favil13.github.io"><i class="fa fa-facebook"></i> facebook</a>
                 <a target="_blank" href="http://twitter.com/home?status=list+of+%23github+repositories+from+%40avil13+http%3A%2F%2Favil13.github.io%2F"><i class="fa fa-twitter"></i> twitter</a>
                 <a target="_blank" href="http://vkontakte.ru/share.php?url=http%3A%2F%2Favil13.github.io"><i class="fa fa-vk"></i> vk.com</a>
@@ -73,15 +137,17 @@
     </div>
 
 
-
     <div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
         window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')
         </script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+        <script src="numeric_format.js"></script>
+        <script src="script.js"></script>
+
+
+<!--
 
         <script>
         (function(i, s, o, g, r, a, m) {
@@ -137,6 +203,7 @@
             </div>
         </noscript>
 
+-->
 
 
     </div>
