@@ -131,7 +131,7 @@ https://github.com/avil13/jQuery-anchorSpy.js
 
                 var actionOnScroll = function() {
                     var wst = $(window).scrollTop() + settings.margin + 1;
-                    debugger;
+
                     $.each(blocks, function(n, v) {
                         if (v.top <= wst && v.bottom > wst) {
                             reActive(n);
