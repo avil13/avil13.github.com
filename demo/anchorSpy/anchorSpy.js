@@ -1,5 +1,5 @@
 /**
-anchorSpy 0.3
+anchorSpy 0.4
 https://github.com/avil13/jQuery-anchorSpy.js
 */
 (function($) {
@@ -141,9 +141,9 @@ https://github.com/avil13/jQuery-anchorSpy.js
 
 
                 $(document).scroll(actionOnScroll);
-
-                $(document).on({'touchmove': actionOnScroll() });
-
+                $(document).on({
+                    'touchmove': actionOnScroll()
+                });
 
 
                 // обрабатываем нажатие локальных ссылок
