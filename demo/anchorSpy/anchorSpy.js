@@ -140,12 +140,9 @@ https://github.com/avil13/jQuery-anchorSpy.js
                 };
 
 
-                // $(document).scroll(actionOnScroll);
+                $(document).scroll(actionOnScroll);
 
-                $(document).on({
-                    'touchmove': actionOnScroll(),
-                    'scroll': actionOnScroll()
-                });
+                $(document).on({'touchmove': actionOnScroll() });
 
 
 
