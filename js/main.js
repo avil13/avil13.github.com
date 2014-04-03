@@ -18,8 +18,8 @@ jQuery(document).ready(function($) {
             $('.social-btns').find('a').show();
             return false;
         });
-
     };
+
 
     if (Modernizr.touch) {
         showRecomendation();
