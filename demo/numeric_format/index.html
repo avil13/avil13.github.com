@@ -20,6 +20,10 @@
 
     <link href='http://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+    <script src="/js/highlight.pack.js"></script>
+    <link rel="stylesheet" href="/css/monokai_sublime.css">
 </head>
 
 <body>
@@ -59,7 +63,10 @@
 
             <li>
                 <a href="#" id="formatting" class="button">Format</a>
-                <span class="format-output">Have You 1000000.01 $?</span>
+                <p>
+                    <br>
+                    <span class="format-output">Have You 1000000.01 $?</span>
+                </p>
             </li>
         </ul>
 
@@ -106,7 +113,7 @@
             </p>
 
 
-        <pre class="doc pre">
+        <pre class="doc pre hljs">
 $('p.nead-formatting').numeric_format({
                          <span class="cod">thSep</span>:<span class="var-el">&quot; &quot;</span>,
                          <span class="cod">dcSep</span>:<span class="var-el">&quot;,&quot;</span>

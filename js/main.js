@@ -25,4 +25,12 @@ jQuery(document).ready(function($) {
         showRecomendation();
     }
 
+    // http://highlightjs.org/
+    hljs.initHighlightingOnLoad();
+    hljs.configure({tabReplace: '    '});
+    $('.doc').each(function(i, e) {
+        hljs.highlightBlock(e);
+    });
+
+
 });
