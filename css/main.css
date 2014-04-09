@@ -211,24 +211,20 @@ a:hover{text-shadow: 0 0 1px #A6EAFF; }
 .repo li:hover:after {
     z-index:5;
     content:'';
-    background:#61bdb6;
-    width:100%;
-    height:100%;
+    height:96%;
     display:block;
     position:absolute;
     top:0;left:0;right:0;bottom:0;
     opacity:0.4;
-
-    -webkit-animation: backline 2s 1;
-    -moz-animation: backline 2s 1;
-    -o-animation: backline 2s 1;
-    animation: backline 2s 1;
-    background-color: #666;
+    border-bottom:2px solid #444444;
     float:left;
 
-    -webkit-border-radius: 500px 0 500px 0;
-    border-radius: 500px 0 500px 0;
+    -webkit-animation: backline 2.5s 1;
+    -moz-animation: backline 2.5s 1;
+    -o-animation: backline 2.5s 1;
+    animation: backline 2.5s 1;
 }
+
 
 @-keyframes backline{
     from{width:0%; }
