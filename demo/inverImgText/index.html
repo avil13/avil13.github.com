@@ -41,31 +41,79 @@
         <hr class="header">
 
 
+        <h2>Demo of jQuery plugin invertImgText.js</h2>
 
-        <div class="patt-container" id="patt1">
+        <a href="https://github.com/avil13/invertImgText" class="git-link">GitHub repository</a>
+
+        <hr class="m-tb">
+
+
+
+
+        <div class="patt" id="patt1">
             Lorem ipsum dolor sit amet.
         </div>
 
-        <div class="patt-container" id="patt2">
+        <div class="patt" id="patt2">
             Lorem ipsum dolor sit amet.
         </div>
 
-        <div class="patt-container" id="patt3">
+        <div class="patt" id="patt3">
             Lorem ipsum dolor sit amet.
         </div>
 
-        <div class="patt-container" id="patt4">
+        <div class="patt" id="patt4">
             Lorem ipsum dolor sit amet.
         </div>
 
-        <div class="patt-container" id="patt5">
+        <div class="patt" id="patt5">
             Lorem ipsum dolor sit amet.
         </div>
 
-        <div class="patt-container" id="patt6">
+        <div class="patt" id="patt6">
             Lorem ipsum dolor sit amet.
         </div>
 
+
+
+
+        <hr class="m-tb">
+
+        <h3>How to use?</h3>
+
+        <br>
+        <pre class="doc pre">
+&lt;!-- HTML --&gt;
+&lt;div class=&quot;patt&quot; id=&quot;patt1&quot;&gt;
+    Lorem ipsum dolor sit amet.
+&lt;/div&gt;
+        </pre>
+
+        <pre class="doc pre">
+/* CSS */
+#patt1{
+    background: url('img/congruent_outline.png') 0 0 repeat;
+}
+        </pre>
+
+        AND
+
+        JavaScript:
+
+        <pre class="doc">
+            // get background image on this block
+            $(<span class="cod">'.patt'</span>).invertImgText();
+        </pre>
+
+        or
+
+        <pre class="doc">
+            $(<span class="cod">'.patt'</span>).invertImgText('/path/to/img.jpg');
+        </pre>
+
+        <p>
+            Text color in <span class="cod">.patt</span> block will be changed
+        </p>
 
 
     </div>

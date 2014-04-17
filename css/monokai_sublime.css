@@ -134,6 +134,8 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .apache .hljs-sqbracket,
 .tex .hljs-formula {
   color: #75715e;
+  width:100%;
+  display:inline-block;
 }
 
 .coffeescript .javascript,
