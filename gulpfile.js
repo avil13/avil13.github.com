@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 // работа с css
 gulp.task('css', function() {
-   gulp.src(['css/normalize.css', 'css/main.css', 'css/monokai_sublime.css', 'css/google-font.css', 'css/font-awesome.css'])
+   gulp.src(['css/normalize.css', 'css/main.css', 'css/monokai_sublime.css', 'css/google-font.css'])
       .pipe(autoprefixer({
          browsers: ['last 15 versions', '> 1%', 'ie 9'],
          cascade: false
