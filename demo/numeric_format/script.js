@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    $('#formatting').click(function() {
+    $('#formatting').one('click', function() {
         var thSep = $('#thSep').val();
         var dcSep = $('#dcSep').val();
 
@@ -14,7 +14,8 @@ jQuery(document).ready(function($) {
 
         $('.format-output').numeric_format({
             thSep: thSep,
-            dcSep: dcSep
+            dcSep: dcSep,
+            watch: true
         });
 
         return false;

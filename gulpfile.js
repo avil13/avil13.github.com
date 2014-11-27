@@ -17,9 +17,11 @@ gulp.task('css', function() {
             cascade: false
         }))
         .pipe(concatCSS('style.css'))
+
         // .pipe(uncss({
         //    html: ['index.html', 'demo/form_data/index.html', 'demo/numeric_format/index.html', 'demo/inverImgText/index.html', 'demo/anchorSpy/index.html']
         // }))
+
         .pipe(minifyCSS())
         .pipe(rename('style.min.css'))
         .pipe(gulp.dest('css/'));
@@ -27,7 +29,7 @@ gulp.task('css', function() {
 
 // Задача на отслеживание изменений
 gulp.task('watch', function() {
-    gulp.watch('src/css/*.css', ['css']);
+    gulp.watch('css/*.css', ['css']);
 });
 
 // Запуск задач

@@ -69,7 +69,7 @@ h1 a {
 }
 
 .repo li {
-    margin-bottom: 1em;
+    margin-bottom: 1.4em;
 }
 .repo li a {
     vertical-align: top;
@@ -91,14 +91,14 @@ h1 a {
 a:hover{text-shadow: 0 0 1px #A6EAFF; }
 
 
-
+/*
 .repo li a.demo{
     border-bottom:1px solid #49fdaf;
     color: #49fdaf;
     padding-bottom:2px;
     margin-left:20px;
     display:inline-block;
-}
+}*/
 
 .repo li{
     position:relative;
@@ -264,57 +264,17 @@ table.options tr:last-child td{
 
 
 /* @ */
-.btn-info:not(.btn-link):not(.btn-flat) {
-background-color: #03a9f4;
+
+.btn.demo{
+    border: 1px solid #52b9f9;
+    padding: 0px 8px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #52b9f9;
+    display: inline-block;
+    margin-left: 10px;
+    box-shadow: 0 3px 10px rgba(185,185,185,.23),0 3px 10px rgba(185,185,185,.16);
 }
-.btn-default:not(.btn-link):not(.btn-flat), .btn:not(.btn-link):not(.btn-flat) {
-background-color: transparent;
-}
-.btn {
-  position: relative;
-  padding: 8px 30px;
-  border: 0;
-  margin: 10px 1px;
-  cursor: pointer;
-  border-radius: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.84);
-  -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-          transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none !important;
-}
-.btn:hover:not(.btn-link):not(.btn-flat) {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23), 0 10px 30px rgba(0, 0, 0, 0.19);
-}
-.btn:active:not(.btn-link):not(.btn-flat) {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23), 0 10px 30px rgba(0, 0, 0, 0.19);
-}
-.btn:not(.btn-link):not(.btn-flat),
-.btn-default:not(.btn-link):not(.btn-flat) {
-  background-color: transparent;
-}
-.btn-info {
-color: #fff;
-background-color: #5bc0de;
-border-color: #46b8da;
-}
-.btn {
-display: inline-block;
-padding: 6px 12px;
-margin-bottom: 0;
-font-size: 14px;
-font-weight: 400;
-line-height: 1.42857143;
-text-align: center;
-white-space: nowrap;
-vertical-align: middle;
-cursor: pointer;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-background-image: none;
-border: 1px solid transparent;
-border-radius: 4px;
+.btn.demo:hover{
+    box-shadow: 0 6px 10px rgba(185,185,185,.23),0 10px 30px rgba(185,185,185,.19);
 }
