@@ -1,3 +1,5 @@
-# robotstxt.org/
+User-Agent: *
 
-User-agent: *
+Sitemap: http://avil13.github.io/sitemap.xml
+
+Host: avil13.github.io
