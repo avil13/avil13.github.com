@@ -9,6 +9,9 @@
     "gulp-rename": "~1.2.0",
     "gulp-autoprefixer": "~1.0.0",
     "gulp-uncss": "~0.4.5",
-    "gulp-import-css": "~0.1.2"
+    "gulp-import-css": "~0.1.2",
+    "gulp-jsmin": "~0.1.4",
+    "gulp-js1k": "0.0.1",
+    "gulp-concat": "~2.4.2"
   }
 }
