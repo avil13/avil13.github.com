@@ -65,7 +65,7 @@ h1 a {
 
 .repo {
     line-height: 1.5rem;
-    list-style-image: url('../img/github.png');
+    list-style-image: url('../img/github.svg');
 }
 
 .repo li {
