@@ -61,6 +61,7 @@ h1 a {
     margin: 0 auto;
     width:70%;
     margin-bottom:90px;
+    max-width: 960px;
 }
 .container *{
     -webkit-transition: all 500ms ease-out;
