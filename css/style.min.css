@@ -800,7 +800,7 @@ a:hover {
 
 .repo span {
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 4px;
   color: #52b9f9;
 }
 
@@ -967,6 +967,13 @@ table.options tr:last-child td {
 .btn.demo:hover {
   -webkit-box-shadow: 0 6px 10px rgba(185,185,185,.23),0 10px 30px rgba(185,185,185,.19);
   box-shadow: 0 6px 10px rgba(185,185,185,.23),0 10px 30px rgba(185,185,185,.19);
+}
+
+textarea,
+select,
+input {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
 }
 
 /* ==========================================================================
