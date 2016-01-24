@@ -24,9 +24,6 @@ input:active, textarea:active { outline:none; }
 }
 
 #form input:not(.button), #form textarea, #form select {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
     padding:4px;
     margin:2px;
     background-color:#f0f1dd;
