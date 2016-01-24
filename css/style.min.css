@@ -776,7 +776,7 @@ a:hover {
   position: relative;
   z-index: 100;
   display: inline-block;
-  line-height: normal;
+  line-height: 1.9em;
   text-decoration: none;
   border-bottom: none;
 }
