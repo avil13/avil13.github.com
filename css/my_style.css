@@ -122,6 +122,10 @@ a:hover{text-shadow: 0 0 1px #A6EAFF; }
 .repo li a{
     position:relative;
     z-index: 100;
+    display: inline-block;
+    line-height: normal;;
+    text-decoration: none;
+    border-bottom:none;
 }
 
 .repo li:hover:after {
@@ -134,16 +138,13 @@ a:hover{text-shadow: 0 0 1px #A6EAFF; }
     opacity:0.4;
     border-bottom:2px solid #444444;
     float:left;
-
-    -webkit-animation: backline 2.5s 1;
-    -moz-animation: backline 2.5s 1;
-    -o-animation: backline 2.5s 1;
     animation: backline 2.5s 1;
 }
 
 .repo span {
-/*font-weight: bold;
-margin-right: 10px;*/
+    font-weight: bold;
+    margin-right: 10px;
+    color: #52b9f9;
 }
 
 
