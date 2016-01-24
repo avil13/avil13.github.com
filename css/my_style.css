@@ -5,11 +5,9 @@
 html, body{width: 100%;}
 body{
     font-size: 1em;
-
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+    background-color: #222;
     background-image: url('../img/dark_wall.png');
-
     padding-top: 10px;
 }
 
@@ -141,6 +139,11 @@ a:hover{text-shadow: 0 0 1px #A6EAFF; }
     -moz-animation: backline 2.5s 1;
     -o-animation: backline 2.5s 1;
     animation: backline 2.5s 1;
+}
+
+.repo span {
+/*font-weight: bold;
+margin-right: 10px;*/
 }
 
 
