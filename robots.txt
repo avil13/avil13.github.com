@@ -1,5 +1,0 @@
-User-Agent: *
-
-Sitemap: http://avil13.github.io/sitemap.xml
-
-Host: avil13.github.io
